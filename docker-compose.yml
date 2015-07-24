@@ -3,22 +3,22 @@ zookeeper:
   ports:
    - "2181:2181"
 kafka0:
-  image: kafka/kafka-broker-0
+  build: kafka/kafka-broker-0
   ports:
    - "9092:9092"
 kafka1:
-  image: kafka/kafka-broker-1
+  build: kafka/kafka-broker-1
   ports:
    - "9093:9093"
 kafka2:
-  image: kafka/kafka-broker-2
+  build: kafka/kafka-broker-2
   ports:
    - "9094:9094"
 kafkaoffsetmgr:
-  image: kafka-offset-mgr
+  build: kafka-offset-mgr
   ports:
    - "8081:8081"
 yahookafkamgr:
-  image: yahoo-kafka-manager
+  build: yahoo-kafka-manager
   ports:
    - "8080:8080"
